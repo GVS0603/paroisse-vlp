@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Église Saint-Pierre-et-Saint-Paul — Vaux-le-Pénil</title>
 <meta name="description" content="Paroisse Saint-Pierre-et-Saint-Paul de Vaux-le-Pénil (Seine-et-Marne). Horaires des messes, vie paroissiale, sacrements. Église-halle du XIIIe siècle, inscrite aux monuments historiques depuis 1926.">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/logo/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="images/logo/apple-touch-icon.png">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 :root{
@@ -84,7 +84,7 @@ p+p{margin-top:14px}
 @media(max-width:760px){.gal-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.gal-grid{grid-template-columns:1fr}}
 figure.gal{margin:0}
-.gal .frame{aspect-ratio:3/4;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--stone)}
+.gal .frame{aspect-ratio:4/3;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--stone)}
 .gal .frame img{width:100%;height:100%;object-fit:cover;display:block}
 figure.gal figcaption{font-family:'Marcellus',serif;font-size:15px;margin-top:10px;letter-spacing:.02em}
 .credit{margin-top:24px;font-size:12.5px;color:var(--muted)}
@@ -114,6 +114,16 @@ figure.gal figcaption{font-family:'Marcellus',serif;font-size:15px;margin-top:10
 .contact .ck{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#B9AE97;margin-bottom:6px}
 .contact .cv{font-size:16px}
 .contact a{color:var(--stone);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--gold)}
+
+#evangile .ev-card{background:var(--stone-2);border:1px solid var(--line);border-top:3px solid var(--oxblood);border-radius:12px;padding:30px 34px;max-width:760px;margin-top:22px}
+.ev-ref{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--oxblood)}
+.ev-titre{font-family:'Marcellus',serif;font-size:22px;margin:8px 0 16px;line-height:1.25}
+.ev-intro{font-style:italic;color:var(--muted);margin-bottom:12px}
+.ev-texte{font-size:16.5px;line-height:1.75;color:#33312c}
+.ev-texte p{margin:0 0 12px}
+.ev-loading,.ev-err{color:var(--muted);font-size:15px}
+.ev-credit{font-size:12px;color:var(--muted);margin-top:14px}
+.ev-credit a,.ev-err a{color:var(--oxblood)}
 
 footer{padding:40px 0;font-size:12.5px;color:var(--muted);text-align:center;border-top:1px solid var(--line)}
 footer a{color:var(--muted)}
@@ -145,6 +155,7 @@ footer .fl{margin-top:8px;letter-spacing:.04em}
     <div class="tb-name">St-Pierre <b>&amp;</b> St-Paul</div>
   </div>
   <nav class="tb-nav">
+    <a href="#evangile">Évangile</a>
     <a href="#messes">Messes</a>
     <a href="#eglise">L'église</a>
     <a href="#images">Images</a>
@@ -186,6 +197,14 @@ footer .fl{margin-top:8px;letter-spacing:.04em}
   <div class="h-item"><span class="h-k">Monument historique</span><span class="h-v">depuis 1926</span></div>
 </div></div>
 
+<section id="evangile"><div class="wrap">
+  <div class="sec-eyebrow">Parole de Dieu</div>
+  <h2>Évangile du jour</h2>
+  <p class="lead" id="ev-jour"></p>
+  <div class="ev-card"><div id="evangile-box" class="ev-loading">Chargement de l'évangile du jour…</div></div>
+  <p class="ev-credit">Textes liturgiques © <a href="https://www.aelf.org" target="_blank" rel="noopener">AELF</a>, Paris.</p>
+</div></section>
+
 <section id="messes" class="masses"><div class="wrap">
   <div class="sec-eyebrow">Horaires</div>
   <h2>Messes &amp; célébrations</h2>
@@ -220,13 +239,13 @@ footer .fl{margin-top:8px;letter-spacing:.04em}
 <section id="images" class="gallery"><div class="wrap">
   <div class="sec-eyebrow">En images</div>
   <h2>L'église en images</h2>
-  <p class="lead">Quelques vues de l'édifice. Déposez vos propres photos dans le dossier <code>images/</code> du site, ou réutilisez celles de Wikimedia Commons.</p>
+  <p class="lead">Trois regards sur l'édifice : le clocher et sa flèche de pierre, le chevet vu du parc, et la nef aux voûtes gothiques.</p>
   <div class="gal-grid">
-    <figure class="gal"><div class="frame"><img src="images/eglise-facade.jpg" alt="Façade de l'église Saint-Pierre-et-Saint-Paul" loading="lazy" onerror="phMissing(this)"></div><figcaption>La façade</figcaption></figure>
-    <figure class="gal"><div class="frame"><img src="images/eglise-chevet.jpg" alt="Chevet de l'église" loading="lazy" onerror="phMissing(this)"></div><figcaption>Le chevet</figcaption></figure>
-    <figure class="gal"><div class="frame"><img src="images/eglise-interieur.jpg" alt="Intérieur de l'église" loading="lazy" onerror="phMissing(this)"></div><figcaption>L'intérieur</figcaption></figure>
+    <figure class="gal"><div class="frame"><img src="images/photos_13714681766395.jpg" alt="Clocher de l'église Saint-Pierre-et-Saint-Paul" loading="lazy" onerror="phMissing(this)"></div><figcaption>Le clocher</figcaption></figure>
+    <figure class="gal"><div class="frame"><img src="images/Vauxlepenilegliz.JPG" alt="Chevet de l'église vu du parc" loading="lazy" onerror="phMissing(this)"></div><figcaption>Le chevet</figcaption></figure>
+    <figure class="gal"><div class="frame"><img src="images/photos_14526120107631.jpg" alt="Intérieur : la nef et ses voûtes" loading="lazy" onerror="phMissing(this)"></div><figcaption>L'intérieur</figcaption></figure>
   </div>
-  <p class="credit">Photos à créditer selon leur licence. Vues libres de droits (avec mention de l'auteur) : <a href="https://commons.wikimedia.org/wiki/Category:%C3%89glise_Saint-Pierre-et-Saint-Paul_(Vaux-le-P%C3%A9nil)" target="_blank" rel="noopener">Wikimedia Commons</a>.</p>
+  <p class="credit">Photos : © Christian Prunier (<a href="https://clochers.org" target="_blank" rel="noopener">clochers.org</a>).</p>
 </div></section>
 
 <section id="vie" class="masses"><div class="wrap">
@@ -286,6 +305,49 @@ function phMissing(img){
     '</svg>'
   );
 }
+</script>
+<script>
+(function(){
+  var box = document.getElementById('evangile-box');
+  if(!box) return;
+
+  function parisDate(){
+    return new Intl.DateTimeFormat('fr-CA',{timeZone:'Europe/Paris',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+  }
+  function extract(data){
+    var messe=(data.messes&&data.messes[0])||{};
+    var ev=(messe.lectures||[]).find(function(l){return (l.type||'').toLowerCase()==='evangile';})||{};
+    var info=data.informations||{};
+    return {jour:info.jour_liturgique_nom||info.ligne1||'',reference:ev.reference||'',titre:ev.titre||'',intro:ev.intro_lue||'',contenu:ev.contenu||''};
+  }
+  function render(d){
+    var h='';
+    if(d.reference) h+='<div class="ev-ref">'+d.reference+'</div>';
+    if(d.titre) h+='<h3 class="ev-titre">'+d.titre+'</h3>';
+    if(d.intro) h+='<p class="ev-intro">'+d.intro+'</p>';
+    h+='<div class="ev-texte">'+d.contenu+'</div>';
+    box.innerHTML=h;
+    var j=document.getElementById('ev-jour');
+    if(j&&d.jour) j.textContent=d.jour;
+  }
+  function fail(){
+    box.innerHTML='<p class="ev-err">L\'évangile du jour n\'a pas pu être chargé pour le moment. Vous pouvez le lire sur <a href="https://www.aelf.org" target="_blank" rel="noopener">aelf.org</a>.</p>';
+  }
+
+  // 1) relais Netlify (fiable en production)
+  fetch('/.netlify/functions/evangile').then(function(r){
+    if(!r.ok) throw 0; return r.json();
+  }).then(function(d){
+    if(!d||!d.contenu) throw 0; render(d);
+  }).catch(function(){
+    // 2) repli : API AELF en direct (si CORS autorisé)
+    fetch('https://api.aelf.org/v1/messes/'+parisDate()+'/france').then(function(r){
+      if(!r.ok) throw 0; return r.json();
+    }).then(function(data){
+      var d=extract(data); if(!d.contenu) throw 0; render(d);
+    }).catch(fail);
+  });
+})();
 </script>
 </body>
 </html>
