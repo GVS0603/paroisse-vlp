@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="240" height="240" role="img" aria-label="Emblème de la paroisse Saint-Pierre-et-Saint-Paul : les clés de saint Pierre et l'épée de saint Paul">
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#9A7B3F" stroke-width="1.4"/>
+  <circle cx="60" cy="60" r="51" fill="none" stroke="#9A7B3F" stroke-width="0.7"/>
+  <g fill="none" stroke="#9A7B3F" stroke-width="2.4" stroke-linecap="round">
+    <g transform="rotate(30 60 60)"><circle cx="60" cy="89" r="5.5"/><line x1="60" y1="83.5" x2="60" y2="36"/><line x1="54" y1="42" x2="66" y2="42"/></g>
+    <g transform="rotate(-30 60 60)"><circle cx="60" cy="89" r="5.5"/><line x1="60" y1="83.5" x2="60" y2="36"/><line x1="54" y1="42" x2="66" y2="42"/></g>
+  </g>
+  <g stroke="#7A1E22" stroke-linecap="round">
+    <path d="M60 27 L56.5 35 L63.5 35 Z" fill="#7A1E22" stroke="none"/>
+    <line x1="60" y1="34" x2="60" y2="66" stroke-width="3"/>
+    <line x1="47" y1="66" x2="73" y2="66" stroke-width="2.6"/>
+    <line x1="60" y1="66" x2="60" y2="79" stroke-width="2.6"/>
+    <circle cx="60" cy="82.5" r="3.2" fill="#7A1E22" stroke="none"/>
+  </g>
+</svg>
